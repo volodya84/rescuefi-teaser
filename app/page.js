@@ -6,25 +6,26 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center">
       {/* Hero */}
       <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-  	<Image 
-   	src="/hero.jpg" 
-    	alt="RescueFi Hero" 
-    	fill 
-    	className="object-cover opacity-80" 
-    	priority // loads fast for hero
- 	 />
-        <div className="absolute z-10 text-center px-8">
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 text-primary drop-shadow-2xl">
-            RescueFi 🪂
-          </h1>
-          <p className="text-2xl md:text-4xl font-semibold text-accent">
-            DeFi&apos;s Parachute
-          </p>
-          <p className="text-xl md:text-3xl mt-4">
-            Don&apos;t Get Rekt — Get Rescued
-          </p>
-        </div>
-      </div>
+  <Image 
+    src="/hero.jpg" 
+    alt="RescueFi Hero" 
+    fill 
+    className="object-cover" 
+    priority 
+  />
+  <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70" /> {/* overlay for text pop */}
+  <div className="absolute z-10 text-center px-8">
+    <h1 className="text-6xl md:text-8xl font-bold mb-4 text-primary drop-shadow-2xl animate-pulse">
+      RescueFi 🪂
+    </h1>
+    <p className="text-2xl md:text-4xl font-semibold text-accent drop-shadow-lg">
+      DeFi&apos;s Parachute
+    </p>
+    <p className="text-xl md:text-3xl mt-4 text-white drop-shadow-lg">
+      Don&apos;t Get Rekt — Get Rescued
+    </p>
+	</div>
+	</div>
 
       {/* Problem */}
       <section className="py-20 px-8 max-w-4xl text-center">
@@ -57,9 +58,9 @@ export default function Home() {
             required
             className="w-full px-6 py-4 mb-4 rounded-lg text-black text-lg"
           />
-          <button type="submit" className="w-full bg-accent text-black font-bold py-4 rounded-lg text-xl hover:bg-green-400 transition">
-            Get Rescued First 🚀
-          </button>
+         <button type="submit" className="w-full bg-accent text-black font-bold py-6 rounded-xl text-2xl hover:bg-green-400 transition shadow-2xl shadow-accent/50 hover:shadow-accent/80">
+  Get Rescued First 🚀
+</button>
         </form>
         <p className="mt-8 text-sm">Powered by community. No VC. rescuefi.eth treasury.</p>
       </section>
