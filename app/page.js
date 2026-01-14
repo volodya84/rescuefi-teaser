@@ -48,7 +48,7 @@ export default function Home() {
       {/* Waitlist CTA */}
       <section className="py-20 px-8 text-center">
         <h2 className="text-4xl font-bold mb-8 text-primary">Join the Waitlist</h2>
-        <p className="text-xl mb-8">{'Fair launch incoming. Be first for alpha & retro rewards.'}</p>
+       <p className="text-xl mb-8">Fair launch incoming. Be first for alpha and retro rewards.</p>
         <form action=https://formspree.io/f/xbddldng" method="POST" className="max-w-md mx-auto">
           <input
             type="email"
