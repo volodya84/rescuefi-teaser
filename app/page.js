@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center">
       {/* Hero */}
       <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        <Image src={hero} alt="RescueFi Hero" fill className="object-cover opacity-80" />
+        <Image src="/hero.jpg" alt="RescueFi Hero" fill className="object-cover opacity-80" />
         <div className="absolute z-10 text-center px-8">
           <h1 className="text-6xl md:text-8xl font-bold mb-4 text-primary drop-shadow-2xl">
             RescueFi 🪂
