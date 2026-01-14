@@ -1,12 +1,18 @@
 import Image from 'next/image';
-import hero from '@/public/hero.jpg'; // place downloaded hero.jpg in /public
+
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
       {/* Hero */}
       <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        <Image src="/hero.jpg" alt="RescueFi Hero" fill className="object-cover opacity-80" />
+  	<Image 
+   	src="/hero.jpg" 
+    	alt="RescueFi Hero" 
+    	fill 
+    	className="object-cover opacity-80" 
+    	priority // loads fast for hero
+ 	 />
         <div className="absolute z-10 text-center px-8">
           <h1 className="text-6xl md:text-8xl font-bold mb-4 text-primary drop-shadow-2xl">
             RescueFi 🪂
@@ -43,7 +49,7 @@ export default function Home() {
       <section className="py-20 px-8 text-center">
         <h2 className="text-4xl font-bold mb-8 text-primary">Join the Waitlist</h2>
         <p className="text-xl mb-8">Fair launch incoming. Be first for alpha & retro rewards.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST" className="max-w-md mx-auto">
+        <form action=https://formspree.io/f/xbddldng" method="POST" className="max-w-md mx-auto">
           <input
             type="email"
             name="email"
